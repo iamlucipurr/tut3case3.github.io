@@ -1,0 +1,124 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 3
+
+   Civil War History Text and Color Style
+   Author: Jake Aubrey
+   Date:   11/15/2016
+
+   Filename:         cw_styles.css
+   Supporting Files: cw_layout.css
+
+*/ 
+
+
+/*import below is for layout style sheet contained within this stylesheet */
+
+
+@import url('layout.css');
+
+/* navigation classes */
+.horizontal {
+	display: inline;
+	
+}
+
+.vertical {
+	
+	display: block;
+	background-color: hsl(32, 100%, 95%);
+}
+
+body {
+	font-family: 'Palatinpo Linotype', 'Book Antiqua', Palatino, serif;
+	
+}
+
+/* headings below */
+
+h1,h2,h3,h4,h5,h6 {
+	
+	color: hsla(212, 0%, 0%, 0.4);
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-indent: 5px;
+	
+}
+
+body>header>h1 {
+	background-color: hsl(212, 100%, 29%)
+	
+}
+
+/* for navigation css seperate from the classes themselves*/
+
+.horizontal ul {
+	font-family: 'Century Gothic MS', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	line-height: 20px;
+	list-style-type: none;
+	
+}
+
+.horizontal a {
+	color: hsl(212, 100%, 70%);
+		text-decoration: none;
+}
+
+.horizontal a:hover {
+	color: hsl(212, 100%, 29%)
+}
+
+.vertical h4 {
+	color: hsla(32, 0%, 0%, 0.5);
+	font-size: 18px;
+	text-indent: 15px;
+}
+
+.vertical ol {
+	list-style-type: upper-roman;
+	line-height: 2em;
+	
+}
+.vertical ol li {
+	list-style-type: upper-alpha;
+}
+
+.vertical a {
+	color: hsla(212, 100%, 29%, 0.6);
+		text-decoration: none;
+}
+
+
+.vertical a:hover {
+	color: hsla(212, 100%, 29%, 1.0);
+		text-decoration: underline;
+}
+
+/* section css below */
+
+section {
+	background-color: hsl(212, 95%, 90%);
+}
+
+article p:first-of-type:first-letter {
+	font-size: 32px;
+	
+}
+
+/* footer stuff */
+
+footer p {
+	font-size: 10px;
+	line-height: 30px;
+	text-align: center;
+	
+}
+
+
+
+
